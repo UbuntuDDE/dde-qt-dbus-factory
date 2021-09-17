@@ -1,0 +1,46 @@
+From: Arun Kumar Pariyar <openarungeek@gmail.com>
+Date: Wed, 6 Jan 2021 01:21:29 +0545
+Subject: [PATCH] Explicitly use python3 instead of python
+
+---
+ libdframeworkdbus/generate_code.py      | 6 +++---
+ libdframeworkdbus/libdframeworkdbus.pro | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/libdframeworkdbus/generate_code.py b/libdframeworkdbus/generate_code.py
+index 95528bf..d11faa1 100755
+--- a/libdframeworkdbus/generate_code.py
++++ b/libdframeworkdbus/generate_code.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ from __future__ import print_function
+ import os
+@@ -52,8 +52,8 @@ def main():
+ 
+         print("generating the pri file...")
+         pwdfy = lambda x: "$$PWD/%s" % x
+-        sources = map(pwdfy, sorted(glob.glob1(generated_dir, "*.cpp")))
+-        headers = map(pwdfy, sorted(glob.glob1(generated_dir, "*.h")))
++        sources = list(map(pwdfy, sorted(glob.glob1(generated_dir, "*.cpp"))))
++        headers = list(map(pwdfy, sorted(glob.glob1(generated_dir, "*.h"))))
+         pri.write("HEADERS += %s\n" % " ".join(headers))
+         pri.write("SOURCES += %s" % " ".join(sources))
+         print("done.")
+diff --git a/libdframeworkdbus/libdframeworkdbus.pro b/libdframeworkdbus/libdframeworkdbus.pro
+index 784d6d8..59becce 100644
+--- a/libdframeworkdbus/libdframeworkdbus.pro
++++ b/libdframeworkdbus/libdframeworkdbus.pro
+@@ -124,7 +124,7 @@ SOURCES += \
+     types/policyresult.cpp \
+     types/policydetails.cpp
+ 
+-!system(python $$PWD/generate_code.py): error("Failed to generate code")
++!system(python3 $$PWD/generate_code.py): error("Failed to generate code")
+ include(generated/generated.pri)
+ 
+ isEmpty(LIB_INSTALL_DIR) {
+-- 
+2.27.0
+

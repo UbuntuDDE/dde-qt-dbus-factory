@@ -1,3 +1,233 @@
+dde-qt-dbus-factory (5.4.17-1) impish; urgency=medium
+
+  * New upstream release.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Fri, 17 Sep 2021 20:34:00 +0545
+
+dde-qt-dbus-factory (5.3.0.34-2ubuntu2) hirsute; urgency=medium
+
+  * Rebuild.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Thu, 15 Apr 2021 15:31:33 +0545
+
+dde-qt-dbus-factory (5.3.0.34-2ubuntu1) hirsute; urgency=medium
+
+  * Rebuild for hirsute.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Mon, 08 Feb 2021 14:18:16 +0545
+
+dde-qt-dbus-factory (5.3.0.34-2) groovy; urgency=medium
+
+  * Rebuild with qdbus-qt5 as runtime dependency.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Tue, 12 Jan 2021 13:25:01 +0545
+
+dde-qt-dbus-factory (5.3.0.34-1) groovy; urgency=medium
+
+  * New upstream relase 5.3.0.34.
+  * Updated patch Explicitly-use-python3-instead-of-python file.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Wed, 06 Jan 2021 00:54:06 +0545
+
+dde-qt-dbus-factory (5.2.0.29-1) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/control:
+    + Bump Standards-Version to 4.5.1.
+    + Tighten Build dependency libdtkcore-dev to (>= 5.2~).
+  * debian/rules: Cleanup and encure proper build.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Mon, 21 Dec 2020 00:48:51 +0545
+
+dde-qt-dbus-factory (5.2.0.29-1~exp1) experimental; urgency=medium
+
+  [ Arun Kumar Pariyar ]
+  * New upstream release 5.2.0.29.
+  * debian/copyright: Update copyright info.
+  * debian/patches: Add patch to use relative path
+    in python generate_code.
+
+  [ Tu Qinggang ]
+  * debian/control:
+    + Add Tu Qinggang to the uploader list.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Tue, 03 Nov 2020 16:40:19 +0545
+
+dde-qt-dbus-factory (5.2.0.3-1~exp1) experimental; urgency=medium
+
+  * New upstream release 5.2.0.3.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Tue, 14 Jul 2020 14:41:20 +0545
+
+dde-qt-dbus-factory (5.1.0.1-1~exp1) experimental; urgency=medium
+
+  [ Arun Kumar Pariyar ]
+  * New upstream release 5.1.0.1.
+  * debian/control:
+    + Bump debhelper compat to v13.
+    + Add Arun Kumar Pariyar to the uploaders list.
+    + Bump build-dependency on libdtkcore-bin to v5
+  * debian/patches: updated python3-compatiblity patch
+
+  [ Boyuan Yang ]
+  * debian/libdframeworkdbus2.shlibs: Force using latest version.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 20 May 2020 05:06:47 +0800
+
+dde-qt-dbus-factory (5.0.1-2) unstable; urgency=medium
+
+  * debian/patches: Refresh python3-compatiblity patch.
+  * debian/control: Bump Standards-Version to 4.5.0.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 31 Jan 2020 12:15:41 -0500
+
+dde-qt-dbus-factory (5.0.1-1) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/symbols: Replace symbols file with shlibs file
+    since the library is too fragile;
+    set minimum library version requirement to 5.0.1.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 19 Sep 2019 15:43:26 -0400
+
+dde-qt-dbus-factory (5.0.1-1~exp1) experimental; urgency=medium
+
+  * New upstream release 5.0.1.
+    + Fix FTBFS against gcc 9. (Closes: #925667)
+  * debian/control: Bump Standards-Version to 4.4.0.
+  * debian/symbols: Refresh symbol file.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 22 Aug 2019 15:55:28 -0400
+
+dde-qt-dbus-factory (1.1.0-2) unstable; urgency=medium
+
+  * Refresh symbols according to buildd.d.o .
+
+ -- Yanhao Mo <yanhaocs@gmail.com>  Tue, 26 Feb 2019 20:49:19 +0800
+
+dde-qt-dbus-factory (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version 1.1.0
+  * Update patches.
+  * Refresh symbols.
+
+ -- Yanhao Mo <yanhaocs@gmail.com>  Tue, 26 Feb 2019 14:42:16 +0800
+
+dde-qt-dbus-factory (1.0.7-1) unstable; urgency=medium
+
+  * New upstream release 1.0.7.
+  * debian/control:
+    + Build-depend on debhelper-compat (= 12) instead of using
+      debian/compat file.
+    + Bump Standards-Version to 4.3.0 (no changes needed).
+    + Use Rules-Requires-Root: no.
+  * debian/patches: Add patch to build-depend on python3:any instead
+    of python (python2).
+  * debian/symbols: Refresh symbols.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 05 Jan 2019 21:25:29 -0500
+
+dde-qt-dbus-factory (1.0.6-1) unstable; urgency=medium
+
+  * New upstream release 1.0.6.
+  * debian/symbols: Refresh symbols.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 07 Dec 2018 22:00:54 -0500
+
+dde-qt-dbus-factory (1.0.5-1) unstable; urgency=medium
+
+  * New upstream release 1.0.5.
+  * debian/libdframeworkdbus-dev.docs: Install technology-preview.md
+    as development document.
+  * debian/libdframeworkdbus2.symbols:
+    + Add new symbols.
+    + Provide Build-Depends-Package meta-information field (lintian).
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 03 Nov 2018 16:00:25 -0400
+
+dde-qt-dbus-factory (1.0.4-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.2.1 (no changes needed).
+  * Update my uploader email address with @debian.org one.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 28 Aug 2018 20:56:26 -0400
+
+dde-qt-dbus-factory (1.0.4-1) unstable; urgency=medium
+
+  * New upstream version 1.0.4
+  * Refresh symbols.
+
+ -- Yanhao Mo <yanhaocs@gmail.com>  Mon, 06 Aug 2018 16:04:34 +0800
+
+dde-qt-dbus-factory (1.0.3-2) unstable; urgency=medium
+
+  * Reconfirm symbols using buildd log.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 29 Jul 2018 07:37:54 +0800
+
+dde-qt-dbus-factory (1.0.3-1) unstable; urgency=medium
+
+  * New upstream version 1.0.3
+  * Refresh symbols.
+  * d/control: Add new uploader Yanhao Mo <yanhaocs@gmail.com> .
+
+ -- Yanhao Mo <yanhaocs@gmail.com>  Wed, 25 Jul 2018 11:17:21 +0800
+
+dde-qt-dbus-factory (1.0.2-2) unstable; urgency=medium
+
+  * Rebuild against gcc 8.
+  * debian/control: Bump Standards-Version to 4.1.5 (no changes needed).
+  * debian/symbols: Refresh symbols when built against gcc 8.
+  * debian/rules: Some minor cleanup:
+    + Use architecture.mk instead of manual invocation of dpkg-architecture.
+    + Update QT_SELECT variable assignment.
+
+ -- Boyuan Yang <073plan@gmail.com>  Fri, 20 Jul 2018 09:14:21 +0800
+
+dde-qt-dbus-factory (1.0.2-1) unstable; urgency=medium
+
+  * New upstream release. Closes: #898659.
+  * Revert maintainer team address to pkg-deepin-devel.
+  * d/symbols: Refresh symbols using build logs.
+
+ -- Boyuan Yang <073plan@gmail.com>  Thu, 17 May 2018 10:48:25 +0800
+
+dde-qt-dbus-factory (1.0.1-2ubuntu1) cosmic; urgency=medium
+
+  * Mark a symbol as optional, not found with -O3 builds.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 14 May 2018 13:50:11 -0400
+
+dde-qt-dbus-factory (1.0.1-2) unstable; urgency=medium
+
+  * Reconfirm symbols using buildd buildlog.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 15 Apr 2018 19:40:21 +0800
+
+dde-qt-dbus-factory (1.0.1-1) unstable; urgency=medium
+
+  * Release to unstable.
+  * Reconfirm symbols using buildd buildlog.
+  * d/control: Using team+pkg-deepin@tracker.debian.org in
+    Maintainer field.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 15 Apr 2018 10:57:26 +0800
+
+dde-qt-dbus-factory (1.0.1-1~exp2) experimental; urgency=medium
+
+  * Reconfirm symbols using buildd buildlog.
+  * Bump Standards-Version to 4.1.4 (no changes needed).
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 08 Apr 2018 16:26:27 +0800
+
+dde-qt-dbus-factory (1.0.1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump SONAME for libdframeworkdbus (1->2) for transition.
+  * d/control: Use Salsa platform for Vcs field.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 18 Mar 2018 13:59:05 +0800
+
 dde-qt-dbus-factory (0.4.2-2) unstable; urgency=medium
 
   * Refresh symbols using build's buildlog.

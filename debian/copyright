@@ -1,13 +1,15 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: dde-qt-dbus-factory
+Upstream-Contact: https://github.com/linuxdeepin/dde-qt-dbus-factory/issues
 Source: https://github.com/linuxdeepin/dde-qt-dbus-factory/
 
 Files: *
-Copyright: 2015-2017 Deepin Technology Co., Ltd.
+Copyright: 2011-2019 Deepin Technology Co., Ltd.
 License: GPL-3+
 
 Files: debian/*
 Copyright: 2017 Boyuan Yang <073plan@gmail.com>
+           2020 Arun Kumar Pariyar <openarungeek@gmail.com>
 License: GPL-3+
 
 Files: libdframeworkdbus/qtdbusextended/*
