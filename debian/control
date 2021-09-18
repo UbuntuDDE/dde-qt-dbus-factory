@@ -9,8 +9,8 @@ Uploaders:
  Tu Qinggang <tuqinggang@uniontech.com>,
 Build-Depends:
  debhelper-compat (= 13),
- libdtkcore-dev (>= 5.4.20~),
- libdtkcore5-bin (>=5.4.20~),
+ libdtkcore-dev (>= 5.5~),
+ libdtkcore5-bin (>=5.5~),
  pkg-config,
  pkg-kde-tools,
  python3:any,
